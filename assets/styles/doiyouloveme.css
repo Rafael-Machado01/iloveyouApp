@@ -1,0 +1,53 @@
+main {
+   background-color: #F6F6F6;
+   position: relative;
+}
+.bg {
+   background-color: #fff;
+}
+.title {
+   font-size: 39px;
+}
+.link {
+   color: #fff;
+   text-decoration: none;
+}
+.full-height {
+   height: 100vh;
+}
+.shape {
+   height: 200px;
+   width: 500px;
+   border-radius: 5%;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   animation: shape-change 5s infinite ease;
+   
+}
+@keyframes shape-change{
+   10% {
+      height: 180px;
+      width: 450px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   }
+}
+#yes {
+   margin: 0 20px;
+}
+#no {
+   position: absolute;
+   
+}
+@media (max-width: 768px) {
+  .shape {
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+   height: 300px;
+   animation: shape-change-mobile 2s infinite ease;
+  }
+  @keyframes shape-change-mobile {
+   10% {
+      height: 280px;
+      width: 400px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   }
+  }
+}
