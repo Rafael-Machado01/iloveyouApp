@@ -21,7 +21,6 @@ main {
    border-radius: 5%;
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
    animation: shape-change 5s infinite ease;
-   
 }
 @keyframes shape-change{
    10% {
@@ -31,11 +30,13 @@ main {
    }
 }
 #yes {
-   margin: 0 20px;
+   margin: 0 4px;
 }
 #no {
-   position: absolute;
-   
+   position: absolute;  
+}
+#counter {
+   display: none !important;
 }
 @media (max-width: 768px) {
   .shape {
